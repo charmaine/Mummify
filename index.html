@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Mummify </title>
+    <script src="popup.js"></script>
+    <script src="encrypter.js"></script>
+    <script src="processorTool.js"></script>
+    <script src="jquery-1.12.1.min.js"></script>
+    <script src="ui.js"></script>
+    <script src="replaceText.js"></script>
+    <script src="replace.js"></script>
+	<script src="bigInt.js"></script>
+	<script src="rsa.js"></script>
+
+  </head>
+
+  <body>
+    <img src="mummifytitle.png" alt="Title" style="width:150px; height 50px;">
+    <center>
+      <input id="Key" placeholder="Give us a key!"/>
+    <table style="width:100%">
+      <center>
+      <tr>
+        <td align = "center"><button id="performEncrypt">Encrypt</button>
+        <td align = "center"> <button id="performDecrypt">Decrypt</button>
+      </tr>
+    </center>
+    </table>
+    <input id="originalText" placeholder="Enter Text"/>
+    <input id="processedText" placeholder="Processed Text"/>
+  </center>
+  </body>
+</html>

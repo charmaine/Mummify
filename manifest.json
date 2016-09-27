@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Mummify",
+  "description": "This extension will encrypt and decrypt",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "mummify.png",
+   "default_popup": "index.html"
+  },
+  "permissions": [
+   "tabs",
+   "activeTab",
+   "chrome://favicon/",
+   "http://*/*",
+   "https://*/*"
+   ],
+   "content_scripts": [
+     {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery-1.12.1.min.js","selection.js","replace.js"],
+      "run_at": "document_end",
+      "all_frames": true
+     }
+   ]
+}
